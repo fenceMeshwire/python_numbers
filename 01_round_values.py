@@ -18,7 +18,7 @@ round(5.4) == 5 # True
 round(5.6) == 6 # True
 round(6.5) == 6 # True
 
-# Alternatively another method can be applied:
+# Alternatively, another method can be applied:
 value = 1.23456
 format(value, '0.2f') 
 # value = '1.23' and returns as type string.
