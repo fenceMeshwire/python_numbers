@@ -4,7 +4,7 @@
 
 # measurement_converter.py
 
-# Converting imperial to metric measurements and vice versa.
+# Conversion from imperial to metric measurements and vice versa.
 
 def convert_yard_to_meter(measurement):
     measurement = measurement * 0.9144
