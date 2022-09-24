@@ -12,11 +12,20 @@ class Imperial:
     def convert_mile_to_yard(self):
         return self.distance * 880
 
+    def convert_yard_to_mile(self):
+        return self.distance / 880
+
     def convert_mile_to_feet(self):
         return self.distance * 2640
 
+    def convert_feet_to_mile(self):
+        return self.distance / 2640
+
     def convert_mile_to_inches(self):
         return self.distance * 63360
+
+    def convert_inches_to_mile(self):
+        return self.distance / 63360
 
 distance = 1
 
