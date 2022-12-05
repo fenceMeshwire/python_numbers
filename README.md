@@ -9,4 +9,5 @@
 <li>...</li>
 <li>Convert metric to imperial weight and vice versa (07_weight_converter.py)</li>
 <li>Connect units to values and calculate with them, using UnitRegistry from the module pint. (08_unit_registry.py)</li>
+<li>Calculate an active fraction of two substances a/(a+b) with the content c and the percentage active ingredient d contained therein. (09_calc_active_proportion.py)</li>
 </ol>
