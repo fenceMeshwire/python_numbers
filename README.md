@@ -10,5 +10,5 @@
 <li>Convert metric to imperial weight and vice versa (07_weight_converter.py)</li>
 <li>Connect units to values and calculate with them, using UnitRegistry from the module pint. (08_unit_registry.py)</li>
 <li>Calculate an active fraction of two substances a/(a+b) with the content c and the percentage active ingredient d contained therein. (09_calc_active_proportion.py)</li>
-<li>Gradient of the division of hours:minutes of the 24h time avoiding the division by zero (10_hours_divided_by_minutes.py)</li>
+<li>Gradient of the division of hours:minutes of 24h time avoiding the division by zero (10_hours_divided_by_minutes.py)</li>
 </ol>
