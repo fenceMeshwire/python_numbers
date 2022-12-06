@@ -32,8 +32,8 @@ for hour in hours:
 result = pd.Series(results)
 result.plot()
 
-plt.xlabel('Stunde:Minute')
-plt.ylabel('Ergebnis')
+plt.xlabel('Hour:Minute')
+plt.ylabel('Result')
 plt.show()
 
 # Write the output to a TXT file alternatively:
