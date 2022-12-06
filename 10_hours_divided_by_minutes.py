@@ -9,10 +9,14 @@ import matplotlib.pyplot as plt
 hours = [h for h in range(24)]
 minutes = [m for m in range(60)]
 results:dict = {}
+upper:dict = {}
+lower:dict = {}
+lower_rate = 0
+upper_rate = 0
 
 for hour in hours:
     for minute in minutes:
-        if minute != 0: # Avoid division by Zero
+        if minute != 0:
 
             if hour < 10 and minute < 10:
                 key = "0" + str(hour) + ":0" + str(minute)
@@ -27,13 +31,23 @@ for hour in hours:
                 key = str(hour) + ":0" + str(minute)
 
             value = hour / minute
+            lower_rate += 0.0002872711 # Growth rate for lowest values
+            upper_rate += 0.016949     # Upper value growth rate per minute += 1/59
+
             results[key] = round(value, 3)
+            lower[key] = lower_rate
+            upper[key] = upper_rate
 
 result = pd.Series(results)
-result.plot()
+lower = pd.Series(lower)
+upper = pd.Series(upper)
 
-plt.xlabel('Hour:Minute')
-plt.ylabel('Result')
+result.plot()
+lower.plot(linestyle='dotted')
+upper.plot(linestyle='dotted')
+
+plt.xlabel('Stunde:Minute')
+plt.ylabel('Ergebnis')
 plt.show()
 
 # Write the output to a TXT file alternatively:
